@@ -1,0 +1,44 @@
+*,
+body,
+section,
+div {
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  background: linear-gradient(90deg, #347d63 0%, #63f7c1 99.3%);
+  display: flex;
+  align-items: center;
+}
+
+.header .information {
+  z-index: 10;
+}
+
+.header .information > h1 {
+  font-size: 96px;
+}
+
+.header .information > h2 {
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+
+.header .polygons-top::before {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-image: url("../images/giant-polygons.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
